@@ -5,61 +5,171 @@
      crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>월급으로 어디까지 가능할까? | 대출계산기, 자동차 할부 계산기, 1억 모으기</title>
 
-<meta name="description" content="대출계산기, 자동차 할부 계산기부터 1억 모으기 현실 플랜까지. 생활비 절약과 돈버는 방법을 직접 실험하는 MoneyLimit 사이트입니다.">
+  <title>천만우의 만물상 | 생활비 절약템, 대출계산기, 자동차 할부 계산기, 1억 모으기</title>
 
-<meta name="keywords" content="대출계산기, 자동차 할부 계산기, 1억 모으기, 생활비 절약, 돈버는 방법, 가성비, 돈버는 부업">
+  <meta name="description" content="천만우의 만물상에서 생활비 절약템과 가성비 상품을 확인하고, 1억 모으기·대출계산기·자동차 할부 계산기도 한 번에 이용해보세요.">
+  <meta name="keywords" content="천만우의 만물상, 쿠팡 파트너스, 생활비 절약템, LED선풍기, 슈퍼쏘코TC, 대출계산기, 자동차 할부 계산기, 1억 모으기">
+  <meta name="robots" content="index, follow">
 
-<meta name="robots" content="index, follow">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,.65), transparent 34%),
+        linear-gradient(135deg, #ffd6e7 0%, #ffe8f1 44%, #fff4d6 100%);
+    }
+    .strawberry-card {
+      background: rgba(255,255,255,.72);
+      backdrop-filter: blur(14px);
+    }
   </style>
 </head>
-<body class="bg-gradient-to-br from-slate-50 via-white to-slate-100 text-slate-950">
-  <main class="min-h-screen px-4 py-8 md:px-8">
+
+<body class="text-slate-950">
+  <main class="min-h-screen px-4 py-5 md:px-8">
     <div class="mx-auto max-w-6xl">
-      <header class="relative overflow-hidden rounded-[2rem] bg-slate-950 px-6 py-10 text-white shadow-2xl md:px-10 md:py-14">
 
-        <div class="relative z-10 grid gap-6 md:grid-cols-[1fr_260px] md:items-center">
-          <div class="max-w-3xl">
-            <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-slate-200">
-              ✨ 내 월급으로 진짜 가능한지 10초 계산
-            </div>
-            <h1 class="text-4xl font-black tracking-tight md:text-6xl">
-              월급으로 어디까지 가능할까?
-            </h1>
-            <p class="mt-5 text-base leading-7 text-slate-300 md:text-lg">
-              목표 저축, 자동차 할부, 아파트 대출까지 한 번에 계산하는 현실 구매 계산기.
-            </p>
-          </div>
+      <!-- 상단 얇은 계산기 이동 버튼 -->
+      <button
+        onclick="showPage('tools')"
+        class="mb-4 block w-full rounded-full bg-yellow-300 px-4 py-3 text-center text-sm font-black text-slate-950 shadow-md transition hover:bg-yellow-200 md:text-base">
+        💰 1억모으기, 대출, 자동차할부계산 한 번에!
+      </button>
 
-          <div class="flex flex-col gap-3">
-            <button onclick="showPage('main')" class="rounded-3xl border border-white/30 bg-white/10 px-6 py-4 text-left text-white backdrop-blur hover:bg-white/20">
-              <div class="text-sm font-bold">🏠 HOME</div>
-              <div class="mt-1 text-lg font-bold">홈으로 돌아가기</div>
-            </button>
-
-            <button onclick="showPage('sideHustle')" class="rounded-3xl border border-emerald-300/40 bg-emerald-400 px-6 py-5 text-left text-slate-950 shadow-2xl shadow-emerald-900/30 transition hover:scale-[1.02] hover:bg-emerald-300">
-              <div class="text-sm font-black">💸 NEW</div>
-              <div class="mt-1 text-2xl font-black leading-tight">돈버는 부업</div>
-              <div class="mt-2 text-sm font-semibold text-slate-800">광고·제휴로 월급 외 수익 만들기 →</div>
-            </button>
-          </div>
-        </div>
-      </header>
-<div class="mt-6">
-  <a href="https://link.coupang.com/a/eyuDKY" target="_blank"
-    class="block w-full rounded-2xl bg-yellow-400 px-6 py-4 text-center font-bold text-black shadow hover:bg-yellow-300">
-    💰 생활비 절약 마트말고 쿠팡으로!
-  </a>
-
-  <div class="mt-2 text-xs text-center text-slate-400">
-    쿠팡 파트너스 활동의 일환으로 수수료를 제공받을 수 있습니다.
-  </div>
-</div>
+      <!-- 메인 만물상 페이지 -->
       <section id="mainPage">
+        <header class="overflow-hidden rounded-[2rem] border border-white/70 strawberry-card p-6 text-center shadow-2xl md:p-10">
+          <div class="mx-auto inline-flex rounded-full bg-yellow-300 px-4 py-2 text-sm font-black shadow">
+            🛒 생활비 아끼는 가성비 쇼핑
+          </div>
+          <h1 class="mt-5 text-4xl font-black tracking-tight text-slate-950 md:text-6xl">
+            천만우의 만물상
+          </h1>
+          <p class="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
+            직접 써보고 싶거나, 가격 대비 괜찮아 보이는 상품들을 모아두는 공간입니다.
+            아래 상품을 누르면 쿠팡 파트너스 링크로 이동합니다.
+          </p>
+
+          <div class="mt-5 rounded-2xl bg-white/70 px-4 py-3 text-xs font-medium text-slate-500">
+            쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+          </div>
+
+          <div class="mx-auto mt-5 max-w-xl rounded-3xl bg-white/75 p-2 shadow">
+            <div class="flex gap-2">
+              <input
+                id="productSearch"
+                type="text"
+                inputmode="numeric"
+                placeholder="상품번호 검색 예: 001"
+                class="min-w-0 flex-1 rounded-2xl border border-pink-100 bg-white px-4 py-3 text-sm font-bold outline-none focus:border-yellow-300"
+                onkeydown="if(event.key === 'Enter') searchProduct()">
+              <button
+                onclick="searchProduct()"
+                class="rounded-2xl bg-yellow-300 px-5 py-3 text-sm font-black text-slate-950 shadow hover:bg-yellow-200">
+                검색
+              </button>
+            </div>
+            <div id="searchMessage" class="px-2 pt-2 text-left text-xs font-medium text-pink-600"></div>
+          </div>
+        </header>
+
+        <!-- 상품 리스트 -->
+        <section class="mt-6 space-y-3">
+
+          <!-- 상품 002 -->
+          <a id="product-002"
+             data-product-no="002"
+             href="https://link.coupang.com/a/여기에_LED선풍기_파트너스링크"
+             target="_blank"
+             class="group flex items-center gap-4 rounded-3xl border border-yellow-200 bg-yellow-200 p-4 shadow transition hover:-translate-y-0.5 hover:bg-yellow-100 hover:shadow-lg">
+            <div class="h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-white shadow-inner md:h-24 md:w-24">
+              <!-- 실제 제품사진 주소로 교체 -->
+              <img
+                src="https://via.placeholder.com/300x300.png?text=LED+Fan"
+                alt="LED선풍기 제품사진"
+                class="h-full w-full object-cover transition group-hover:scale-105">
+            </div>
+            <div class="min-w-0 flex-1 text-left">
+              <div class="text-xs font-black text-pink-500 md:text-sm">002</div>
+              <h2 class="mt-1 truncate text-lg font-black text-slate-950 md:text-xl">LED선풍기</h2>
+              <p class="mt-1 line-clamp-1 text-xs text-slate-500 md:text-sm">
+                방, 책상, 캠핑용으로 쓰기 좋은 감성 LED 선풍기
+              </p>
+            </div>
+            <div class="hidden rounded-2xl bg-yellow-400 px-4 py-3 text-sm font-black text-slate-950 shadow group-hover:bg-yellow-300 md:block">
+              보기 →
+            </div>
+          </a>
+
+          <!-- 상품 001 -->
+          <a id="product-001"
+             data-product-no="001"
+             href="https://link.coupang.com/a/여기에_슈퍼쏘코TC_파트너스링크"
+             target="_blank"
+             class="group flex items-center gap-4 rounded-3xl border border-yellow-200 bg-yellow-200 p-4 shadow transition hover:-translate-y-0.5 hover:bg-yellow-100 hover:shadow-lg">
+            <div class="h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-white shadow-inner md:h-24 md:w-24">
+              <!-- 실제 제품사진 주소로 교체 -->
+              <img
+                src="https://via.placeholder.com/300x300.png?text=Super+Soco+TC"
+                alt="슈퍼쏘코TC 전기 오토바이 제품사진"
+                class="h-full w-full object-cover transition group-hover:scale-105">
+            </div>
+            <div class="min-w-0 flex-1 text-left">
+              <div class="text-xs font-black text-pink-500 md:text-sm">001</div>
+              <h2 class="mt-1 truncate text-lg font-black text-slate-950 md:text-xl">슈퍼쏘코TC 전기 오토바이</h2>
+              <p class="mt-1 line-clamp-1 text-xs text-slate-500 md:text-sm">
+                출퇴근, 근거리 이동용으로 눈길 가는 전기 오토바이
+              </p>
+            </div>
+            <div class="hidden rounded-2xl bg-yellow-400 px-4 py-3 text-sm font-black text-slate-950 shadow group-hover:bg-yellow-300 md:block">
+              보기 →
+            </div>
+          </a>
+
+        </section>
+
+        <!-- 상품 추가용 복사 블록 -->
+        <section class="mt-6 rounded-[1.7rem] border border-dashed border-pink-300 bg-white/45 p-5 text-center">
+          <div class="text-lg font-black">상품을 더 추가할 때는 위 상품 카드 하나를 복사해서 붙이면 됩니다.</div>
+          <p class="mt-2 text-sm text-slate-600">
+            이미지 주소, 상품명, 설명, 쿠팡 파트너스 링크만 바꾸면 계속 늘릴 수 있어요.
+          </p>
+        </section>
+      </section>
+
+      <!-- 기존 계산기 페이지 -->
+      <section id="toolsPage" class="hidden">
+        <header class="relative overflow-hidden rounded-[2rem] bg-slate-950 px-6 py-10 text-white shadow-2xl md:px-10 md:py-14">
+          <div class="relative z-10 grid gap-6 md:grid-cols-[1fr_260px] md:items-center">
+            <div class="max-w-3xl">
+              <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-slate-200">
+                ✨ 내 월급으로 진짜 가능한지 10초 계산
+              </div>
+              <h1 class="text-4xl font-black tracking-tight md:text-6xl">
+                월급으로 어디까지 가능할까?
+              </h1>
+              <p class="mt-5 text-base leading-7 text-slate-300 md:text-lg">
+                목표 저축, 자동차 할부, 아파트 대출까지 한 번에 계산하는 현실 구매 계산기.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <button onclick="showPage('main')" class="rounded-3xl border border-white/30 bg-white/10 px-6 py-4 text-left text-white backdrop-blur hover:bg-white/20">
+                <div class="text-sm font-bold">🛒 STORE</div>
+                <div class="mt-1 text-lg font-bold">만물상으로 돌아가기</div>
+              </button>
+
+              <button onclick="showPage('sideHustle')" class="rounded-3xl border border-emerald-300/40 bg-emerald-400 px-6 py-5 text-left text-slate-950 shadow-2xl shadow-emerald-900/30 transition hover:scale-[1.02] hover:bg-emerald-300">
+                <div class="text-sm font-black">💸 NEW</div>
+                <div class="mt-1 text-2xl font-black leading-tight">돈버는 부업</div>
+                <div class="mt-2 text-sm font-semibold text-slate-800">광고·제휴로 월급 외 수익 만들기 →</div>
+              </button>
+            </div>
+          </div>
+        </header>
+
         <nav class="sticky top-4 z-20 mt-6 rounded-3xl border border-slate-200 bg-white/80 p-2 shadow-lg shadow-slate-200/70 backdrop-blur">
           <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
             <button id="tab-save" onclick="showTab('save')" class="flex h-14 items-center justify-center rounded-2xl text-base font-bold transition bg-slate-950 text-white">
@@ -74,7 +184,6 @@
           </div>
         </nav>
 
-
         <div class="mt-6">
           <div id="calculator-save"></div>
           <div id="calculator-car" class="hidden"></div>
@@ -85,23 +194,17 @@
           <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div class="text-lg font-bold text-slate-950">대출 금리 비교</div>
             <p class="mt-2 text-sm leading-6 text-slate-500">금리 1% 차이도 장기적으로는 큰 이자 차이를 만들 수 있어요.</p>
-            <button 
-              onclick="window.open('https://loan.pay.naver.com/n/mortgage?from=search0001', '_blank')"
-              class="mt-4 rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">금리 비교 하기</button>
+            <button onclick="window.open('https://loan.pay.naver.com/n/mortgage?from=search0001', '_blank')" class="mt-4 rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">금리 비교 하기</button>
           </div>
           <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div class="text-lg font-bold text-slate-950">자동차 보험 비교</div>
             <p class="mt-2 text-sm leading-6 text-slate-500">차량 구매 전 보험료와 유지비를 함께 확인하면 월 부담을 줄일 수 있어요.</p>
-            <button
-              onclick="window.open('https://insurance.pay.naver.com/car?inflow=pc_brand_search_text', '_blank')"
-              class="mt-4 rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">보험 비교 하기</button>
+            <button onclick="window.open('https://insurance.pay.naver.com/car?inflow=pc_brand_search_text', '_blank')" class="mt-4 rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">보험 비교 하기</button>
           </div>
           <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div class="text-lg font-bold text-slate-950">저축 습관 만들기</div>
             <p class="mt-2 text-sm leading-6 text-slate-500">목표 금액을 정하고 매달 자동 저축하면 달성 확률이 높아져요.</p>
-            <button
-              onclick="window.open('https://pay.naver.com/savings/list/saving', '_blank')"
-              class="mt-4 rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">적금 비교 하기</button>
+            <button onclick="window.open('https://pay.naver.com/savings/list/saving', '_blank')" class="mt-4 rounded-xl bg-slate-950 px-4 py-3 text-sm font-bold text-white">적금 비교 하기</button>
           </div>
         </div>
 
@@ -126,15 +229,7 @@
           <h2 class="text-3xl font-black">돈버는 부업</h2>
           <p class="mt-2 text-sm text-slate-500">광고 + 제휴로 수익 만드는 방법</p>
         </section>
-
-
-
-
-
         <section id="postList" class="space-y-4"></section>
-
-      
-
         <div id="pagination" class="flex justify-center gap-2"></div>
       </section>
 
@@ -158,9 +253,8 @@
       <section id="aboutPage" class="hidden mt-6 rounded-3xl border bg-white p-6">
         <h2 class="text-2xl font-bold mb-4">사이트 소개</h2>
         <p class="text-sm text-slate-600 leading-7">
-          이 사이트는 월급 기반 현실적인 소비와 목표 달성을 계산하기 위해 제작된 서비스입니다.
-          목표 저축, 자동차 할부, 아파트 대출처럼 일상에서 자주 고민하는 큰돈 문제를 간단한 입력만으로 확인할 수 있도록 돕습니다.
-          복잡한 금융 용어보다 실제 월 부담과 걸리는 기간을 직관적으로 보여주는 것이 목표입니다.
+          이 사이트는 천만우의 만물상과 월급 기반 현실 계산기를 함께 제공하는 개인 웹사이트입니다.
+          상품 추천 영역에서는 쿠팡 파트너스 링크가 포함될 수 있으며, 계산기는 단순 참고용입니다.
         </p>
       </section>
 
@@ -169,46 +263,37 @@
         <p class="text-sm text-slate-600 leading-7">
           월급 300만 원 기준, 고정지출을 180만 원으로 관리하면 매달 120만 원 저축이 가능합니다.
           이 경우 1억 원을 모으는 데 약 7년이 걸립니다. 핵심은 고정비 절감과 꾸준한 저축입니다.
-          통신비, 구독 서비스, 불필요한 소비를 줄이는 것만으로도 기간을 크게 단축할 수 있습니다.
         </p>
       </section>
 
       <section id="article2Page" class="hidden mt-6 rounded-3xl border bg-white p-6">
         <h2 class="text-2xl font-bold mb-4">자동차 할부, 정말 괜찮은 선택일까?</h2>
         <p class="text-sm text-slate-600 leading-7">
-          자동차는 구매 순간부터 가치가 떨어지는 자산입니다. 할부로 구매할 경우 이자까지 추가되어
-          실제 부담은 더 커집니다. 월급 대비 자동차 비용이 30%를 넘는다면 재정적으로 부담이 될 수 있습니다.
-          구매 전 유지비까지 반드시 계산해야 합니다.
+          자동차는 구매 순간부터 가치가 떨어지는 자산입니다. 할부로 구매할 경우 이자까지 추가되어 실제 부담은 더 커집니다.
+          월급 대비 자동차 비용이 30%를 넘는다면 재정적으로 부담이 될 수 있습니다.
         </p>
       </section>
 
       <section id="article3Page" class="hidden mt-6 rounded-3xl border bg-white p-6">
         <h2 class="text-2xl font-bold mb-4">대출 금리 1% 차이가 만드는 결과</h2>
         <p class="text-sm text-slate-600 leading-7">
-          주택담보대출에서 금리 1% 차이는 수천만 원의 이자 차이를 만듭니다.
-          예를 들어 3억 원 대출 기준으로 금리가 1% 낮아지면 총 이자가 수천만 원 줄어들 수 있습니다.
+          주택담보대출에서 금리 1% 차이는 수천만 원의 이자 차이를 만들 수 있습니다.
           따라서 대출 비교는 필수이며, 금리 조건을 꼼꼼히 확인해야 합니다.
         </p>
       </section>
 
-    
-      <footer class="mt-8 rounded-3xl border border-slate-200 bg-white p-5 text-center text-sm text-slate-500">
-        <div class="mb-2">단순 참고용 계산기입니다.</div>
+      <footer class="mt-8 rounded-3xl border border-white/80 bg-white/70 p-5 text-center text-sm text-slate-500 shadow">
+        <div class="mb-2">쿠팡 파트너스 링크가 포함될 수 있으며, 계산기는 단순 참고용입니다.</div>
         <div class="flex flex-wrap justify-center gap-4 text-xs">
           <button onclick="showPage('privacy')" class="underline">개인정보처리방침</button>
           <button onclick="showPage('terms')" class="underline">이용약관</button>
           <button onclick="showPage('about')" class="underline">사이트소개</button>
-          <button onclick="showPage('main')" class="underline">홈</button>
+          <button onclick="showPage('main')" class="underline">만물상 홈</button>
+          <button onclick="showPage('tools')" class="underline">계산기</button>
           <button onclick="showPage('sideHustle')" class="underline">돈버는 부업</button>
         </div>
       </footer>
 
-      <div class="mt-6 flex flex-wrap justify-center gap-3 text-xs">
-        <button onclick="showPage('article1')" class="underline">1억 모으기 글</button>
-        <button onclick="showPage('article2')" class="underline">자동차 글</button>
-        <button onclick="showPage('article3')" class="underline">대출 글</button>
-        <button onclick="showPage('sideHustle')" class="underline">돈버는 부업</button>
-      </div>
     </div>
   </main>
 
@@ -428,11 +513,40 @@
     }
 
     function showPage(page) {
-      const pages = ["main", "sideHustle", "privacy", "terms", "about", "article1", "article2", "article3"];
+      const pages = ["main", "tools", "sideHustle", "privacy", "terms", "about", "article1", "article2", "article3"];
       pages.forEach(p => {
         document.getElementById(`${p}Page`).classList.toggle("hidden", p !== page);
       });
       window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+
+    function searchProduct() {
+      const input = document.getElementById("productSearch");
+      const message = document.getElementById("searchMessage");
+      if (!input) return;
+
+      let keyword = input.value.trim();
+      if (!keyword) {
+        message.textContent = "상품번호를 입력해주세요. 예: 001";
+        return;
+      }
+
+      keyword = keyword.replace(/[^0-9]/g, "").padStart(3, "0");
+      const target = document.getElementById(`product-${keyword}`);
+
+      if (!target) {
+        message.textContent = `${keyword}번 상품을 찾지 못했어요.`;
+        return;
+      }
+
+      message.textContent = `${keyword}번 상품으로 이동합니다.`;
+      showPage("main");
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        target.classList.add("ring-4", "ring-yellow-300");
+        setTimeout(() => target.classList.remove("ring-4", "ring-yellow-300"), 1600);
+      }, 100);
     }
 
     function shareSavings(years) {
@@ -447,24 +561,9 @@
     let currentPage = 1;
     const postsPerPage = 5;
     let posts = [
-      {   title: "설문조사로 돈벌기 패널나우",
-  body: `휴대폰으로 설문조사만 하면 돈이 쌓이는 어플!
-  <br>
-  <a href="https://deg.kr/3f7d37c" target="_blank" class="inline-block mt-3 rounded-xl bg-slate-950 px-4 py-2 text-white font-bold">
-    설문조사하고 돈받기
-  </a>` },
-      {   title: "설문조사로 돈벌기2 톨루나",
-  body: `여러앱 이용시 돈버는 설문조사도 2배!
-  <br>
-  <a href="https://deg.kr/1770a35" target="_blank" class="inline-block mt-3 rounded-xl bg-slate-950 px-4 py-2 text-white font-bold">
-    설문조사하고 돈받기
-  </a>` },
-      { title: "홍보하고 돈벌기",
-  body: `개인 광고주가되어 홍보하면 돈이쌓인다!
-  <br>
-  <a href="https://deg.kr/62a5bd2" target="_blank" class="inline-block mt-3 rounded-xl bg-slate-950 px-4 py-2 text-white font-bold">
-    홍보하고 돈벌기!
-  </a>` },
+      { title: "설문조사로 돈벌기 패널나우", body: `휴대폰으로 설문조사만 하면 돈이 쌓이는 어플!<br><a href="https://deg.kr/3f7d37c" target="_blank" class="inline-block mt-3 rounded-xl bg-slate-950 px-4 py-2 text-white font-bold">설문조사하고 돈받기</a>` },
+      { title: "설문조사로 돈벌기2 톨루나", body: `여러앱 이용시 돈버는 설문조사도 2배!<br><a href="https://deg.kr/1770a35" target="_blank" class="inline-block mt-3 rounded-xl bg-slate-950 px-4 py-2 text-white font-bold">설문조사하고 돈받기</a>` },
+      { title: "홍보하고 돈벌기", body: `개인 광고주가되어 홍보하면 돈이쌓인다!<br><a href="https://deg.kr/62a5bd2" target="_blank" class="inline-block mt-3 rounded-xl bg-slate-950 px-4 py-2 text-white font-bold">홍보하고 돈벌기!</a>` },
       { title: "카카오대리", body: "운전 면허가 있으면 망설이지 말고 시도해보세요 자유롭게 원하는시간에 운전하고 돈벌수있습니다!" }
     ];
 
@@ -487,17 +586,6 @@
 
     function changePostPage(page) {
       currentPage = page;
-      renderPosts();
-    }
-
-    function addPost() {
-      const title = document.getElementById("postTitle").value.trim();
-      const body = document.getElementById("postBody").value.trim();
-      if (!title || !body) return alert("제목과 내용을 입력해주세요.");
-      posts.unshift({ title, body });
-      document.getElementById("postTitle").value = "";
-      document.getElementById("postBody").value = "";
-      currentPage = 1;
       renderPosts();
     }
 
